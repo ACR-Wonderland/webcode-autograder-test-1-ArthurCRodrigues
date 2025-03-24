@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Example page for testing">
+    <meta property="og:title" content="Example Test Page">
+    <meta property="og:description" content="Testing HTML structure for autograder">
+    <title>Test HTML</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Test Page</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#section1">Section 1</a></li>
+            <li><a href="#section2">Section 2</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="section1">
+            <h2>Section 1</h2>
+            <img src="image1.jpg" alt="Image 1">
+        </section>
+        <section id="section2">
+            <h2>Section 2</h2>
+            <form action="#">
+                <input type="text" id="name" name="name">
+                <label for="name">Name:</label>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Footer Content</p>
+    </footer>
+    
+    <!-- This will fail the test for forbidden <b> tag -->
+    <b>This is a bold text.</b>
+
+    <!-- This will fail the test for forbidden <i> tag -->
+    <i>This is italicized text.</i>
+
+    <!-- This will fail the test for forbidden <font> tag -->
+    <font color="red">This is red text using <font> tag.</font>
+
+    <!-- This will pass as it is a valid element -->
+    <p>This paragraph will pass all structural and semantic tests.</p>
+</body>
+</html>

@@ -1,0 +1,54 @@
+/* This will pass the test for external CSS link */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* This will fail the test for the usage of !important */
+h1 {
+    color: blue !important;
+}
+
+/* This will pass the shorthand property test */
+.container {
+    margin: 10px;
+}
+
+/* This will fail the CSS Variables test */
+button {
+    background-color: #4CAF50;
+}
+
+/* This will pass the layout method test by using Flexbox */
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+/* This will fail the minification test */
+p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* This will pass the overqualified selectors test */
+h1, h2 {
+    margin: 10px;
+}
+
+/* This will pass the external CSS only test (no inline CSS here) */
+
+/* This will fail the media query test */
+.container {
+    width: 100%;
+}
+
+/* This will pass the no redundant rules test */
+footer {
+    padding: 20px;
+}
+
+/* This will pass the consistent units test */
+div {
+    width: 50%;
+    margin: 0 auto;
+}
