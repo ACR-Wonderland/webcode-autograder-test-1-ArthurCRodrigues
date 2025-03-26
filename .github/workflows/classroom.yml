@@ -26,7 +26,7 @@ jobs:
         ls -lah
         
         echo "Decoding and displaying test results:"
-        echo "${{ INPUT_HTML_WEIGHT }}" | base64 --decode || echo "Decoding failed"
+        echo "$INPUT_HTML_WEIGHT" | base64 --decode || echo "Decoding failed"
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
