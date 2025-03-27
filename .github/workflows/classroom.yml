@@ -17,9 +17,9 @@ jobs:
       id: autograde
       uses: webtech-network/webcode-autograder@v1
       with:
-        html-weight: 30
-        css-weight: 30
-        js-weight: 40
+        html-weight: 1
+        css-weight: 2
+        js-weight: 3
         timeout: 5
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
