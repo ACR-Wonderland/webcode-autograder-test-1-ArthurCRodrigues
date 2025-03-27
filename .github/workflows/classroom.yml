@@ -20,13 +20,6 @@ jobs:
         html-weight: 30
         css-weight: 30
         js-weight: 40
-    - name: debugging
-      run:  |
-        echo "Listing test result files:"
-        ls -lah
-        
-        echo "Decoding and displaying test results:"
-        echo "$INPUT_HTML_WEIGHT" | base64 --decode || echo "Decoding failed"
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
