@@ -1,7 +1,7 @@
 name: Autograding Tests 
 
 on:
-  push  # Runs on every push to evaluate student submissions
+  push 
 
 jobs:
   run-tests:
