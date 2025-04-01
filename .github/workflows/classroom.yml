@@ -20,7 +20,6 @@ jobs:
         html-weight: 30
         css-weight: 40
         js-weight: 30
-        timeout: 5
     - name: Autograding Reporter
       uses: classroom-resources/autograding-grading-reporter@v1
       env:
