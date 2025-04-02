@@ -4,7 +4,7 @@ on:
   push 
 
 jobs:
-  run-tests:
+  Autograding Tests:
     permissions: write-all
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
