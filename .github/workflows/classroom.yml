@@ -5,6 +5,7 @@ on:
 
 jobs:
   run-tests:
+    permissions: write-all
     runs-on: ubuntu-latest
     if: github.actor != 'github-classroom[bot]'
     steps:
